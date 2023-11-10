@@ -200,7 +200,7 @@ span:hover{
     display: none;
     width:22%;
     height: 100vh;
-    background-color: blue;
+    background-color:#68a5e8;
     position: fixed;
     top:0%;
     right: 0%;
@@ -213,10 +213,14 @@ span:hover{
     margin-top:10px;
     border-bottom: 1px solid black;
 }
+.total{
+    margin-top:10px;
+    font-size:20px;
+    font-weight: 600;
+}
 .cart{
     font-size:28px;
-    font-weight: 500;
-    color:green;
+    font-weight: 600;
 }
 .close img{
     height: 35px;
@@ -227,6 +231,11 @@ display: flex;
 justify-content: space-between;
 margin-top:10px;
 margin-bottom:10px;
+align-items: center;
+padding-left: 10px;
+padding-right: 10px;
+padding: 10px;
+border-bottom: 1px solid black;
 }
 .novoKopce{
 width: 70px;
