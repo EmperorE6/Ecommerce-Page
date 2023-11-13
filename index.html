@@ -13,7 +13,7 @@
                 <div class="logo">My Shop</div>
                 <div class="top_menu">
                     <div class="my_cart" id="cartOpen"><img src="icons/shopping-cart.png" alt="">Your shopping cart</div>
-                    <div class="login_btn"><img src="icons/user.png" alt="">Login</div>
+                    <div class="login_btn" id="login"><img src="icons/user.png" alt="">Login</div>
                 </div>
             </div>
         </div>
@@ -31,11 +31,12 @@
     <div class="size">
         <div class="filter_wrapper">
             <div class="options">
-                <select class="select" id="slct">
-                  <option>Winter</option>
-                  <option>Autumn</option>
-                  <option>Spring</option>
-                  <option>Summer</option>
+                <select class="select" id="slct" onchange="val()">
+                 <option value="All">All</option>
+                  <option value="Winter">Winter</option>
+                  <option value="Autumn">Autumn</option>
+                  <option value="Spring">Spring</option>
+                  <option value="Summer">Summer</option>
                 </select>
             </div>
             <div class="new">
@@ -49,12 +50,31 @@
 <div class="blocks">
     <div class="size">
         <div class="blocks_wrapper">
-            <div class="box" id="kvadrat">
+            <div class="box" >
                 <div class="heart"><img src="icons/heart.svg" alt=""></div>
                 <div class="box_img"><img src="icons/shirt.jpg" alt=""></div>
                 <div class="box_description">Cool Male Summer Shirt</div>
                 <div class="price_star">
-                    <div class="prize">$ 28</div>
+                    <div class="prize" >28</div>
+                    <div class="stars">
+                        <img class="prva" src="icons/star-yellow.svg" alt="">
+                        <img  class="vtora" src="icons/star-yellow.svg" alt="">
+                        <img class="treta" src="icons/star-yellow.svg" alt="">
+                        <img  class="cetvrta" src="icons/star-yellow.svg" alt="">
+                        <img  class="petta" src="icons/star-yellow.svg" alt="">
+                    </div>
+                </div>
+                <div class="add_to_cart" id="add">
+                    <div class="more"><img src="icons/more_icon.svg" alt=""></div>
+                    <div class="text_more">Add to Cart</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="heart"><img src="icons/heart.svg" alt=""></div>
+                <div class="box_img"><img src="icons/winterhat.jpg" alt=""></div>
+                <div class="box_description">Winter Male Hat</div>
+                <div class="price_star">
+                    <div class="prize" >12</div>
                     <div class="stars">
                         <img class="prva" src="icons/star-yellow.svg" alt="">
                         <img  class="vtora" src="icons/star-yellow.svg" alt="">
@@ -69,32 +89,12 @@
                 </div>
                 
             </div>
-            <div class="box"id="kvadrat">
+            <div class="box" >
                 <div class="heart"><img src="icons/heart.svg" alt=""></div>
-                <div class="box_img"><img src="icons/shirt.jpg" alt=""></div>
-                <div class="box_description">Cool Male Summer Shirt</div>
+                <div class="box_img"><img src="icons/flowersummer.webp" alt=""></div>
+                <div class="box_description"> Summer Flower Dress</div>
                 <div class="price_star">
-                    <div class="prize">$ 28</div>
-                    <div class="stars">
-                        <img class="prva" src="icons/star-yellow.svg" alt="">
-                        <img  class="vtora" src="icons/star-yellow.svg" alt="">
-                        <img class="treta" src="icons/star-yellow.svg" alt="">
-                        <img  class="cetvrta" src="icons/star-yellow.svg" alt="">
-                        <img  class="petta" src="icons/star-yellow.svg" alt="">
-                    </div>
-                </div>
-                <div class="add_to_cart" id="add">
-                    <div class="more"><img src="icons/more_icon.svg" alt=""></div>
-                    <div class="text_more">Add to Cart</div>
-                </div>
-                
-            </div>
-            <div class="box" id="kvadrat">
-                <div class="heart"><img src="icons/heart.svg" alt=""></div>
-                <div class="box_img"><img src="icons/shirt.jpg" alt=""></div>
-                <div class="box_description">Cool Male Summer Shirt</div>
-                <div class="price_star">
-                    <div class="prize">$ 28</div>
+                    <div class="prize" >22</div>
                     <div class="stars">
                         <img class="prva" src="icons/star-yellow.svg" alt="">
                         <img  class="vtora" src="icons/star-yellow.svg" alt="">
@@ -109,12 +109,12 @@
                 </div>
                
             </div>
-            <div class="box" id="kvadrat">
+            <div class="box" >
                 <div class="heart"><img src="icons/heart.svg" alt=""></div>
-                <div class="box_img"><img src="icons/shirt.jpg" alt=""></div>
-                <div class="box_description">Cool Male Summer Shirt</div>
+                <div class="box_img"><img src="icons/coat.jpg" alt=""></div>
+                <div class="box_description">Male Winter Coat</div>
                 <div class="price_star">
-                    <div class="prize">$ 28</div>
+                    <div class="prize" >44</div>
                     <div class="stars">
                         <img class="prva" src="icons/star-yellow.svg" alt="">
                         <img  class="vtora" src="icons/star-yellow.svg" alt="">
@@ -129,12 +129,12 @@
                 </div>
                 
             </div>
-            <div class="box" id="kvadrat">
+            <div class="box" >
                 <div class="heart"><img src="icons/heart.svg" alt=""></div>
-                <div class="box_img"><img src="icons/shirt.jpg" alt=""></div>
-                <div class="box_description">Cool Male Summer Shirt</div>
+                <div class="box_img"><img src="icons/menshirt.webp" alt=""></div>
+                <div class="box_description">Short Sleeves Shirt</div>
                 <div class="price_star">
-                    <div class="prize">$ 28</div>
+                    <div class="prize">20</div>
                     <div class="stars">
                         <img class="prva" src="icons/star-yellow.svg" alt="">
                         <img  class="vtora" src="icons/star-yellow.svg" alt="">
@@ -149,12 +149,12 @@
                 </div>
                 
             </div>
-            <div class="box" id="kvadrat">
+            <div class="box" >
                 <div class="heart"><img src="icons/heart.svg" alt=""></div>
-                <div class="box_img"><img src="icons/shirt.jpg" alt=""></div>
-                <div class="box_description">Cool Male Summer Shirt</div>
+                <div class="box_img"><img src="icons/olivetrousers.avif" alt=""></div>
+                <div class="box_description">Olive Trousers Men</div>
                 <div class="price_star">
-                    <div class="prize">$ 28</div>
+                    <div class="prize">31</div>
                     <div class="stars">
                         <img class="prva" src="icons/star-yellow.svg" alt="">
                         <img  class="vtora" src="icons/star-yellow.svg" alt="">
@@ -169,12 +169,13 @@
                 </div>
                 
             </div>
-            <div class="box" id="kvadrat">
+
+            <div class="box" >
                 <div class="heart"><img src="icons/heart.svg" alt=""></div>
-                <div class="box_img"><img src="icons/shirt.jpg" alt=""></div>
-                <div class="box_description">Cool Male Summer Shirt</div>
+                <div class="box_img"><img src="icons/polo.webp" alt=""></div>
+                <div class="box_description">Casual Polo Shirt</div>
                 <div class="price_star">
-                    <div class="prize">$ 28</div>
+                    <div class="prize" >25</div>
                     <div class="stars">
                         <img class="prva" src="icons/star-yellow.svg" alt="">
                         <img  class="vtora" src="icons/star-yellow.svg" alt="">
@@ -188,12 +189,13 @@
                     <div class="text_more">Add to Cart</div>
                 </div>
             </div>
-            <div class="box" id="kvadrat">
+
+            <div class="box" >
                 <div class="heart"><img src="icons/heart.svg" alt=""></div>
-                <div class="box_img"><img src="icons/shirt.jpg" alt=""></div>
-                <div class="box_description">Cool Male Summer Shirt</div>
+                <div class="box_img"><img src="icons/winterjacket.webp" alt=""></div>
+                <div class="box_description"> Male Winter Jacket</div>
                 <div class="price_star">
-                    <div class="prize" id="cena">$ 28</div>
+                    <div class="prize" >38</div>
                     <div class="stars">
                         <img class="prva" src="icons/star-yellow.svg" alt="">
                         <img  class="vtora" src="icons/star-yellow.svg" alt="">
@@ -207,12 +209,12 @@
                     <div class="text_more">Add to Cart</div>
                 </div>
             </div>
-            <div class="box"id="kvadrat" >
+            <div class="box" >
                 <div class="heart"><img src="icons/heart.svg" alt=""></div>
-                <div class="box_img"><img src="icons/shirt.jpg" alt=""></div>
-                <div class="box_description">Cool Male Summer Shirt</div>
+                <div class="box_img"><img src="icons/women jacket.jpg" alt=""></div>
+                <div class="box_description">Women Jacket</div>
                 <div class="price_star">
-                    <div class="prize">$ 28</div>
+                    <div class="prize" >30</div>
                     <div class="stars">
                         <img class="prva" src="icons/star-yellow.svg" alt="">
                         <img  class="vtora" src="icons/star-yellow.svg" alt="">
@@ -227,12 +229,12 @@
                 </div>
                
             </div>
-            <div class="box" id="kvadrat">
+            <div class="box" >
                 <div class="heart"><img src="icons/heart.svg" alt=""></div>
-                <div class="box_img"><img src="icons/shirt.jpg" alt=""></div>
-                <div class="box_description">Cool Male Summer Shirt</div>
+                <div class="box_img"><img src="icons/womenpyjamas.webp" alt=""></div>
+                <div class="box_description">Women Classic Pyjamas </div>
                 <div class="price_star">
-                    <div class="prize">$ 28</div>
+                    <div class="prize" >18</div>
                     <div class="stars">
                         <img class="prva" src="icons/star-yellow.svg" alt="">
                         <img  class="vtora" src="icons/star-yellow.svg" alt="">
@@ -246,6 +248,47 @@
                     <div class="text_more">Add to Cart</div>
                 </div>
             </div>
+
+            <div class="box">
+                <div class="heart"><img src="icons/heart.svg" alt=""></div>
+                <div class="box_img"><img src="icons/jeanswomen.webp" alt=""></div>
+                <div class="box_description"> Jeans For Women</div>
+                <div class="price_star">
+                    <div class="prize" >27</div>
+                    <div class="stars">
+                        <img class="prva" src="icons/star-yellow.svg" alt="">
+                        <img  class="vtora" src="icons/star-yellow.svg" alt="">
+                        <img class="treta" src="icons/star-yellow.svg" alt="">
+                        <img  class="cetvrta" src="icons/star-yellow.svg" alt="">
+                        <img  class="petta" src="icons/star-yellow.svg" alt="">
+                    </div>
+                </div>
+                <div class="add_to_cart" id="add">
+                    <div class="more"><img src="icons/more_icon.svg" alt=""></div>
+                    <div class="text_more">Add to Cart</div>
+                </div>
+            </div>
+
+            <div class="box" >
+                <div class="heart"><img src="icons/heart.svg" alt=""></div>
+                <div class="box_img"><img src="icons/hoodie.webp" alt=""></div>
+                <div class="box_description"> Autumn Hoodie </div>
+                <div class="price_star">
+                    <div class="prize" >25</div>
+                    <div class="stars">
+                        <img class="prva" src="icons/star-yellow.svg" alt="">
+                        <img  class="vtora" src="icons/star-yellow.svg" alt="">
+                        <img class="treta" src="icons/star-yellow.svg" alt="">
+                        <img  class="cetvrta" src="icons/star-yellow.svg" alt="">
+                        <img  class="petta" src="icons/star-yellow.svg" alt="">
+                    </div>
+                </div>
+                <div class="add_to_cart" id="add">
+                    <div class="more"><img src="icons/more_icon.svg" alt=""></div>
+                    <div class="text_more">Add to Cart</div>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
@@ -255,7 +298,7 @@
         <div class="cart">Cart</div>
         <div class="close"><img src="icons/close.png" alt=""></div>
     </div>
-    <div class="total">Total:</div>
+    <div class="total" id="totalprice">Total:</div>
 </div>
 
 <div class="footer">
@@ -286,8 +329,9 @@
                  </div>
             </div>
         </div>
-    </div>
+    </div> 
 </div>
+
 <script src="script.js"></script>
 </body>
 </html>

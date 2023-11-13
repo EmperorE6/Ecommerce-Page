@@ -156,7 +156,6 @@ span:hover{
     border:1px solid black;
     padding:6px;
     margin-top:33px;
-
 }
 .more img{
     height: 35px;
@@ -212,6 +211,7 @@ span:hover{
     padding-right: 10px;
     margin-top:10px;
     border-bottom: 1px solid black;
+    padding:9px;
 }
 .total{
     margin-top:10px;
@@ -243,4 +243,77 @@ height: 30px;
 }
 .novDiv img{
     height: 60px;
+}
+.cartContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+.cartImg{
+    width: 50px;
+}
+.cartImg img{
+    width:100%;
+}
+.cartDesc{
+    margin-right:10px;
+    margin-left:10px;
+    font-size:15px;
+
+}
+.loginProzor{
+    width:400px;
+    height:350px;
+    background-color: #00F9C7;
+    z-index: 999;
+    position: fixed;
+    top:25%;
+    right:40%;
+    border-radius: 12px;
+    border: 2px solid black;
+}
+.title_login{
+    font-size:25px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom:8px;
+    margin-top:7px;
+}
+.undertitle_login{
+    font-size:20px;
+    font-weight: 500;
+    text-align: center;
+}
+.vnes_login{
+    margin-top:40px;
+}
+.vnes_login input{
+    display: block;
+     margin: 0 auto;
+     width:250px;
+     height: 40px;
+     margin-bottom:8px;
+     border-radius: 5px;
+}
+.login_kopce {
+    text-align: center;
+}
+.login_kopce button{
+font-size:20px;
+background-color: #e8b6a0;
+width:120px;
+height: 40px;
+margin-top:15px;
+font-weight: 600;
+border-radius: 10px;
+cursor: pointer;
+}
+
+.createAcc{
+    text-align: center;
+    margin-top:17px;
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
 }
